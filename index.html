@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Raleway" rel="stylesheet">
+    <title>Recipe Finder</title>
+</head>
+<body>
+    <div class="headSection">
+        <h1>Recipe Finder</h1>
+        <h2>Find the Recipe You've Been Looking for!</h2>
+    </div>
+    <form class="search-container">
+        <input type="text"  class="userSearch" placeholder="Search Recipes..." />
+        <button type="submit" onclick="getUserSearch()">Search</button>
+    </form>
+    
+    <div class="results hidden">
+           <h3>Search Results</h3>
+    <div class="searchResultsDisplay item-group"></div> 
+    </div>
+    <h3 class="popTitle">Popular Recipes</h3>
+    <div class="popularRecipes item-group"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
